@@ -1,3 +1,12 @@
 <header>
-  <nav>{{ title() }}</nav>
+  <nav>
+    <span routerLink="/">{{ title() }}</span>
+    <ul>
+      <li routerLink="/todos">Todos</li>
+    </ul>
+  </nav>
 </header>
+
+<!-- IMPORTANT: Using the routerLink prop allows for seamless transitions between pages
+                and it prevents the pages from reloading every single time. Instead it
+                will refresh only the particular components rendered thru the outlet. -->
