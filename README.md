@@ -1,6 +1,7 @@
 # My First Angular App
 
-![Angular](https://img.shields.io/badge/Angular-%E2%9C%94-brightgreen) ![TypeScript](https://img.shields.io/badge/TypeScript-%E2%9C%94-blue) ![HTML](https://img.shields.io/badge/HTML-%E2%9C%94-orange) ![CSS](https://img.shields.io/badge/CSS-%E2%9C%94-blueviolet)
+![Angular](https://img.shields.io/badge/Angular-%E2%9C%94-brightgreen?style=for-the-badge&logo=angular) ![TypeScript](https://img.shields.io/badge/TypeScript-%E2%9C%94-blue?style=for-the-badge&logo=typescript) ![HTML5](https://img.shields.io/badge/HTML5-%E2%9C%94-orange?style=for-the-badge&logo=html5) ![CSS3](https://img.shields.io/badge/CSS3-%E2%9C%94-blueviolet?style=for-the-badge&logo=css3)
+
 
 ## Description
 
@@ -48,5 +49,6 @@ To run the application locally, use the Angular CLI's serve command:
 
    ```bash
    ng serve
+   ```
 
 4. Open your web browser and go to http://localhost:4200 to view the application.
