@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  outline: none;
+}
+
+/* The code above strips away all the default values so we have a clear baseline to work with. */
