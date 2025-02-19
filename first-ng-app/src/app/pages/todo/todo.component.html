@@ -1,7 +1,13 @@
-@for (todo of todoItems(); track todo.id){
-  <p>{{ todo.title }}</p>
-}
+<h3>Todos List</h3>
 
+<ul class="todos">
+  @for (todo of todoItems(); track todo.id){
+    <li class="todos_items">
+      <input id="todo={{ todo.id }}" type="checkbox" [value]="todo.completed" />
+      <label for="todo-{{ todo.id }}">{{ todo.title }}</label>
+    </li>
+  }
+</ul>
 <!-- Rendering components dynamically, similar to the way we do them in React. Angular 
      allows you to use the @for decorator to run a for loop that is very similar to 
      the map function in JS. 

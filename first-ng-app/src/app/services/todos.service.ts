@@ -1,25 +1,16 @@
-import { Injectable } from '@angular/core';
+import { Injectable, inject } from '@angular/core';
 import  { Todo } from '../model/todo.types'
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root',
 })
 export class TodosService {
-  todoItems: Array<Todo> = [
-    {
-      id: 0,
-      userId: 1,
-      title: 'groceries',
-      completed: false,
-    },
-    {
-      id: 1,
-      userId: 1,
-      title: 'car wash',
-      completed: false,
-    },
-  ];
-  constructor() {}
+  http = inject(HttpClient);
+  getTodosFromApi() {
+    const url = `https://jsonplaceholder.typicode.com/todos`;
+    return this.http.get<Array<Todo>>(url);
+  }
 }
  // Services can either be provided to a single component and no where else by
  // creating the 'providers' property within a component and remove the "providedIn: 'root'"
