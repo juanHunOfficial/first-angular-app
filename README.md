@@ -5,7 +5,7 @@
 
 ## Description
 
-My reasoning behind making my first Angular app is to learn a new framework and language (Angular and TypeScript). This app is purely for learning purposes.
+My reasoning behind making My First Angular App is to learn a new framework and language (Angular and TypeScript). This app is purely for learning purposes.
 
 ## Tech Stack
 
