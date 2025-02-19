@@ -1,0 +1,17 @@
+<app-greeting [message]=" homeMessage() " />
+<!-- This is angular's way of passing props.
+ NOTE: The square brackets identify the prop. Then you follow this up by adding
+ a set of double quotes "" and the function inside like you see above.
+ you can hard code values in there but be sure to add the single quotes '' within
+ the double quotes -->
+<app-counter />
+<input
+  placeholder="Type something..."
+  type="text" 
+  (keyup)="keyUpHandler($event)"
+  />
+<!-- All of the event handler props will be within a set of 
+ parenthesis () followed by the name of the event handler and you maybe able
+ to pass in a prop(s) within it like what we have about ($event). This 
+ '$event' param is passing the actual value that is being passed to the event 
+ handler, which we are the using in the home.component.ts file -->
