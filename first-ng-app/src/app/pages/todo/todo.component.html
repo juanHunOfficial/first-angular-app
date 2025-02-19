@@ -1,1 +1,17 @@
-<p>todo works!</p>
+@for (todo of todoItems(); track todo.id){
+  <p>{{ todo.title }}</p>
+}
+
+<!-- Rendering components dynamically, similar to the way we do them in React. Angular 
+     allows you to use the @for decorator to run a for loop that is very similar to 
+     the map function in JS. 
+
+        @for (todo of todoItems(); track todo.id){
+          <p>{{ todo.title }}</p>
+        }
+          
+     The above line reads like so, '@for' run a for loop over the 'todoItems()' signal
+     labeling each item as a 'todo' obj. While looping thru, keep 'track' of the id of 
+     each todo obj via 'todo.id'. Then finally within the curly brackets {} specify 
+     what you want done with each iteration. in this case, create a 'p' tag with the
+     title of each todo obj, which is accessed via the 'todo.title'. -->
