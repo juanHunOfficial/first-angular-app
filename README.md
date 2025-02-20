@@ -7,9 +7,20 @@
 
 
 
-## Description
+## Table of Contents
 
-My reasoning behind making My First Angular App is to learn a new framework and language (Angular and TypeScript). This app is purely for learning purposes.
+1. [Purpose](#purpose)
+2. [Tech Stack](#tech-stack)
+3. [Getting Started](#getting-started)
+   - [Prerequisites](#prerequisites)
+   - [Installation](#installation)
+   - [Running the App](#running-the-app)
+4. [Usage](#usage)
+
+## Purpose
+
+The purpose of "My First Angular App" is to build a foundation in Angular and TypeScript by creating a functional web application. Through this project, I aimed to enhance my understanding of front-end development, learn a component-based framework, and annotate my thoughts in the margin of my code to 
+give viewers an idea of my thought processes when learning new technologies. The app serves as a hands-on learning tool to solidify core concepts and practices within Angular development and front-end development as a whole.
 
 ## Tech Stack
 
@@ -56,3 +67,7 @@ To run the application locally, use the Angular CLI's serve command:
    ```
 
 4. Open your web browser and go to http://localhost:4200 to view the application.
+
+## Usage
+
+Once the application is running locally, you can access the app by navigating to http://localhost:3000 in your browser.
