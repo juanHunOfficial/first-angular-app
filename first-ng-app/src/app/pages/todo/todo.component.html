@@ -1,11 +1,19 @@
 <h3>Todos List</h3>
 
+@if (!todoItems().length){
+  <p>Loading...</p>
+}
+<form>
+  <label>Filter Todos</label>
+  <input 
+    name="searchTerm"
+    [(ngModel)]="searchTerm" 
+    placeholder="Search todos..." 
+  />
+</form>
 <ul class="todos">
-  @for (todo of todoItems(); track todo.id){
-    <li class="todos_items">
-      <input id="todo={{ todo.id }}" type="checkbox" [value]="todo.completed" />
-      <label for="todo-{{ todo.id }}">{{ todo.title }}</label>
-    </li>
+  @for (todo of todoItems() | filterTodos: searchTerm(); track todo.id){
+    <app-todo-items (todoToggled)="updateTodoItem($event)" [todo]="todo" /> 
   }
 </ul>
 <!-- Rendering components dynamically, similar to the way we do them in React. Angular 
